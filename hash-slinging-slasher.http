@@ -1,0 +1,6 @@
+@hash_slinging_slasher_HostAddress = http://localhost:5245
+
+GET {{hash_slinging_slasher_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
