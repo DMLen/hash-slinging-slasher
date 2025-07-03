@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hash-slinging-slasher", "hash-slinging-slasher.csproj", "{D28FF3D0-1AFA-F0AF-2028-A2C36C341660}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D28FF3D0-1AFA-F0AF-2028-A2C36C341660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D28FF3D0-1AFA-F0AF-2028-A2C36C341660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D28FF3D0-1AFA-F0AF-2028-A2C36C341660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D28FF3D0-1AFA-F0AF-2028-A2C36C341660}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F4B3086-ACC6-4CB0-920C-8540199C40FB}
+	EndGlobalSection
+EndGlobal
