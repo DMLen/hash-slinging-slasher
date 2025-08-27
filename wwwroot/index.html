@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<title>Hash-slinging Slasher</title>
+<body>
+
+<h1>Hash-slinging Slasher</h1>
+<p>A basic web app for reverse-searching of images.</p>
+
+<button id="fetchImageTestButton">(TEST) Fetch DB Data</button>
+<button id="postImageTestButton">(TEST) Post Test Image to DB</button>
+<br>
+<textarea id="jsonOutput" rows="10" cols="80" readonly></textarea>
+
+<script>
+document.getElementById('fetchImageTestButton').addEventListener('click', async () => {
+  const response = await fetch('/images');
+        const data = await response.json();
+        document.getElementById('jsonOutput').value = JSON.stringify(data, null, 2);
+  });
+
+document.getElementById('postImageTestButton').addEventListener('click', async () => {
+  const response = await fetch('/images/test', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'}
+  });
+  const data = await response.json();
+  document.getElementById('jsonOutput').value = JSON.stringify(data, null, 2);
+});
+</script>
+
+</body>
+</html>

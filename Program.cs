@@ -11,8 +11,13 @@ builder.Services.AddOpenApi();
 builder.Services.AddDbContext<ImageSearchContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddControllers();
 
 var app = builder.Build();
+
+//serve static file webpages
+app.UseDefaultFiles();
+app.UseStaticFiles();
 
 //create db on first run if it doesnt already exist
 using (var scope = app.Services.CreateScope())
